@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>razaris</title>
+    
+    <link rel="shortcut icon" href="https://www.razaris.jp/wp/wp-content/themes/razaris/images/favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="icon" href="https://www.razaris.jp/wp/wp-content/themes/razaris/images/favicon.ico" type="image/vnd.microsoft.icon">
+
+    <link rel="stylesheet" href="./assets/css/fontawesome.css">
+    <link rel="stylesheet" href="./assets/css/brands.css">
+    <link rel="stylesheet" href="./assets/css/solid.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/top.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+</head>
+<body>
+    <header>
+        <div>
+            <div class="logo">
+                <img src="./assets/img/logo.png" alt="">
+            </div>
+            <div class="menu-btn" onclick="menuClick(this)">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    <div class="menu" onclick="menuClose()">
+        <div>
+            <p onclick="event.stopPropagation();submenu(this)">メニュー1	&nbsp;<span>&#9660;</span></p>
+            <div class="submenu">
+                <div><a href="./web-consult.html">メニュー2</a></div>
+                <div><a href="./seo-consult.html">メニュー3</a></div>
+                <div><a href="./content-consult.html">メニュー4</a></div>
+                <div><a href="./web-product.html">メニュー5</a></div>
+                <div><a href="">メニュー6</a></div>
+            </div>
+        </div>
+        <div><a href="./column.html">メニュー7</a></div>
+        <div><a href="./whitepaper.html">メニュー8</a></div>
+        <div><a href="./company.html">メニュー9</a></div>
+        <div><a href="./contact.html">メニュー10</a></div>
+    </div>
+    <div id="luxy">
+        <main>
+            <section id="section01" class="top-banner" data-props="padding-top,padding-bottom" data-values="45,45">
+                <video autoplay muted  id="myVideo">
+                    <source src="https://stock.adobe.com/ko/search/video?filters%5Bcontent_type%3Aphoto%5D=0&filters%5Bcontent_type%3Aillustration%5D=0&filters%5Bcontent_type%3Azip_vector%5D=0&filters%5Bcontent_type%3Avideo%5 5Bcontent_type%3Atemplate%5D=0&filters%5Bcontent_type%3A3d%5D=0&filters%5Bcontent_type%3Aimage%5D=0&filters%5Bcontent_type%3Aaudio%5D=0&filters%5Binclude_stock_enterprise%5D&B&D= %83%87%E3%82%B8%E3%82%BF%E3%83%AB%EF%BC%86%E3%82%AE%E3%83%A3%E3%83%A9%E3%82 %AF%E3%82%B7%E3%83%BC%E3%81%AA%E3%82%AB%E3%83%A9%E3%83%95%E3%83%AB%E3%81%AA %E3%83%A2%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%B0%E3%83%A9%E3%83%95%E3 %82%A3%E3%83%83%E3%82%AF%E3%81%AE20%E7%A7%92%E3%83%9F%E3%83%83%E3%82%AF%E3%82 %B9&limit=100&search_page=1&search_type=asset-type-change&acp=&aco=%E3%83%87%E3%82%B8%E3%82%BF%E3%83%AB%EF%BC%86%E3%82% AE%E3%83%A3%E3%83%A9%E3%82%AF%E3%82%B7%E3%83%BC%E3%81%AA%E3%82%AB%E3%83%A9% E3%83%95%E3%83%AB%E3%81%AA%E3%83%A2%E3%83%BC%E3%82%B7%E3%83%A 7%E3%83%B3%E3%82%B0%E3%83%A9%E3%83%95%E3%82%A3%E3%83%83%E3%82%AF%E3%81%AE20% E7%A7%92%E3%83%9F%E3%83%83%E3%82%AF%E3%82%B9&get_facets=0" type="video/mp4">
+                </video>
+                <div class="main-container">
+                    <div class="banner-dancer1 luxy-el" data-speed-y="-60" data-offset="0" data-horizontal="1" data-speed-x="-20">
+                        <img src="./assets/img/dancer1.png" alt="">
+                    </div>
+                    <div class="banner-text d-flex justify-content-center oleo">
+                        <div class="luxy-el inner-el" data-horizontal="1" data-speed-x="-15" style="transform: translate3d(-24px, 2px, 0px);">O</div>
+                        <div class="luxy-el inner-el" data-horizontal="1" data-speed-x="-12" style="transform: translate3d(-12px, 2px, 0px);">M</div>
+                        <div class="luxy-el inner-el" data-horizontal="1" data-speed-x="-9" style="transform: translate3d(-6px, 2px, 0px);">I</div>
+                        <div class="luxy-el inner-el" data-horizontal="1" data-speed-x="-6" style="transform: translate3d(0px, 2px, 0px);">Y</div>
+                        <div class="luxy-el inner-el" data-horizontal="1" data-speed-x="-3" style="transform: translate3d(6px, 2px, 0px);">A</div>
+                        <div class="luxy-el inner-el" data-horizontal="1" data-speed-x="0" style="transform: translate3d(12px, 2px, 0px);">&nbsp;</div>
+                        <div class="luxy-el inner-el" data-horizontal="1" data-speed-x="0" style="transform: translate3d(12px, 2px, 0px);">S</div>
+                        <div class="luxy-el inner-el" data-horizontal="1" data-speed-x="3" style="transform: translate3d(24px, 2px, 0px);">T</div>
+                        <div class="luxy-el inner-el" data-horizontal="1" data-speed-x="6" style="transform: translate3d(24px, 2px, 0px);">U</div>
+                        <div class="luxy-el inner-el" data-horizontal="1" data-speed-x="12" style="transform: translate3d(24px, 2px, 0px);">D</div>
+                        <div class="luxy-el inner-el" data-horizontal="1" data-speed-x="15" style="transform: translate3d(24px, 2px, 0px);">I</div>
+                        <div class="luxy-el inner-el" data-horizontal="1" data-speed-x="18" style="transform: translate3d(24px, 2px, 0px);">O</div>
+                    </div>
+                    <div class="banner-subtext luxy-el" data-speed-y="-40" data-offset="0" data-horizontal="1" data-speed-x="-10">
+                        DANCE<span class="and">AND</span>FITNESS
+                    </div>
+                    <div class="banner-dancer2 luxy-el" data-speed-y="-60" data-offset="0" data-horizontal="1" data-speed-x="20">
+                        <img src="./assets/img/dancer2.png" alt="">
+                    </div>
+                    <div class="banner-teacher luxy-el" data-speed-y="-40" data-offset="0" data-horizontal="1" data-speed-x="10">
+                        <img src="./assets/img/PROFESSIONAL TEACHER.png" alt="">
+                    </div>
+                    <div class="banner-teacher-text luxy-el" data-speed-y="-40" data-offset="0" data-horizontal="1" data-speed-x="10">
+                        <p>
+                            PROFESSIONAL TEACHERS
+                        </p>
+                    </div>
+                    <div class="banner-teacher-social luxy-el" data-speed-y="-40" data-offset="0" data-horizontal="1" data-speed-x="10">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                        </p>
+                        <div class="social-icons">
+                            <ul>
+                                <li><a href="https://twitter.com/s_razaris" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="https://www.instagram.com/razaris_studio/" target="_blank"><i class="fab fa-instagram"></i><span>1</span></a></li>
+                                <li><a href="https://www.instagram.com/razaris_musashiurawa/" target="_blank"><i class="fab fa-instagram"></i><span>2</span></a></li>
+                                <li><a href="https://line.me/R/ti/p/%40sju3052e" target="_blank"><i class="fab fa-line"></i></a></li>
+                                <li><a href="https://www.youtube.com/channel/UCtfkmYhUdSObCA72cV7-EbQ" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                                <li><a href="https://www.facebook.com/%E3%83%A9%E3%82%B6%E3%83%AA%E3%82%B9-891098024272614/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                                <li><a href="https://ameblo.jp/razarisdanceandfitness/" target="_blank"><img src="./assets/img/fa-blog.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="section01" class="section01 banner-bottom">
+                <div class="section01-bg">
+                    <img src="./assets/img/top-bottom-path.png" alt="">
+                </div>
+                <div class="line-text">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    </p>
+                </div>
+                <div class="mark-fitness luxy-el" data-speed-y="-6" data-offset="0" data-horizontal="1">
+                    <img src="./assets/img/mark-fitness.png" alt="">
+                </div>            
+            </section>
+            <section id="section02" class="section02 slider luxy-el" data-speed-y="-1" style="transform: translate3d(0px, -240px, 0px);">
+                <div class="main-container">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                              <img src="./assets/img/slide1.png" alt="">
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="./assets/img/slide2.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/img/slide3.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/img/slide4.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/img/slide5.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </section>
+            <section id="section03" class="section03 official-movies">
+                <div class="main-container">
+                    <div class="line-text">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        </p>
+                    </div>
+                    <h1>
+                        OFFICIAL MOVIES
+                        <span class="subtitle">
+                            RAZARIS公式 YouTubeチャンネル
+                        </span>
+                    </h1>
+                    <div>
+                        <div class="view-more luxy-el skater01" data-speed-y="-20" data-offset="700" style="transform: translate3d(0px, 227.6px, 0px);">
+                            <img src="./assets/img/viewmore1.png" alt="">
+                        </div>
+                        <div class="dancer3 luxy-el skater01" data-speed-y="-40" data-offset="1400" style="transform: translate3d(0px, 227.6px, 0px);">
+                            <img src="./assets/img/dancer3.png" alt="">
+                        </div>
+                        <div class="container-takaki">
+                            <div class="takaki">
+                                <img src="./assets/img/takaki.png" alt="">
+                            </div>
+                            <div class="vertical-slider">
+                                <img src="./assets/img/v-slider.png" alt="">
+                                <!-- <div class="swiper vSwiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="./assets/img/slide1.png" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./assets/img/slide2.png" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./assets/img/slide3.png" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./assets/img/slide4.png" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./assets/img/slide5.png" alt="">
+                                        </div>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+            </section>
+            <section id="section04" class="section04 instructor">
+                <h1>
+                    <span class="subtitle">
+                        国内外で活躍中、第一線のプロ講師
+                    </span>
+                    INSTRUCTOR
+                </h1>
+                <div class="photo-container">
+                    <!-- <div class="photo luxy-el skater01" data-speed-y="-20" data-offset="840" style="transform: translate3d(0px, 227.6px, 0px);">
+                        <img src="./assets/img/photo1.png" alt="">
+                    </div>
+                    <div class="photo luxy-el skater01" data-speed-y="-30" data-offset="1280" style="transform: translate3d(0px, 227.6px, 0px);">
+                        <img src="./assets/img/photo2.png" alt="">
+                    </div>
+                    <div class="photo luxy-el skater01" data-speed-y="-40" data-offset="1715" style="transform: translate3d(0px, 227.6px, 0px);">
+                        <img src="./assets/img/photo3.png" alt="">
+                    </div>
+                    <div class="photo luxy-el skater01" data-speed-y="-50" data-offset="2155" style="transform: translate3d(0px, 227.6px, 0px);">
+                        <img src="./assets/img/photo4.png" alt="">
+                    </div> -->
+
+                    <div class="swiper mySwiper1">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./assets/img/photo1.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/img/photo2.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/img/photo3.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/img/photo4.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/img/photo1.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/img/photo2.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/img/photo3.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/img/photo4.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="view-more luxy-el skater01" data-speed-y="-20" data-offset="1000" style="transform: translate3d(0px, 227.6px, 0px);">
+                    <img src="./assets/img/viewmore4.png" alt="">
+                </div>
+            </section>
+            <section id="section05" class="section05 beginner">
+                <div class="line-text">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    </p>
+                </div>
+                <div class="main-container">
+                    <h1>
+                        FOR BEGINNERS
+                        <span class="subtitle">
+                            はじめての方へ
+                        </span>
+                    </h1>
+                    <div class="beginner-content">
+                        <div class="beginner-text">
+                            <p>
+                                「RAZARIS ダンス&フィットネス大宮」でフィットネスもダンスも毎日受けられる、スポーツとスクールの総合型スタジオ「RAZARIS ダンス&フィットネス」大人から子供まで、全ての年齢層に親しまれてきた武蔵浦和の老舗スタジオが2022年3月1日にリニューアルオープン！！<br>
+                                <br>
+                                スポーツクラブの最新プログラムを抜粋し、ダンス講師は国内外の第一線で活躍中の現役プロダンサー！倉庫一棟をフルリノベーションし、最新のプログラムとサウンドシステムで皆様に毎日の元気をお届けします。 色々なジャンルが目白押し！
+                            </p>
+                        </div>
+                        <div class="beginner-classmates">
+                            <img src="./assets/img/class.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div id="section06" class="section06 dancing vh-element" data-props="padding-top" data-values="50">
+                <div id="bg-section06" class="luxy-el bg-section" data-speed-y="-10" style="height: 800px; transform: translate3d(0px, -420px, 0px);"></div>
+                <a class="viewmore2 luxy-el" data-speed-y="-20" data-offset="1200" style="transform: translate3d(0px, 25.2px, 0px);">
+                    <img src="./assets/img/viewmore2.png" alt="">
+                </a>
+                <div class="button-group">
+                    <a href="" class="btn-price">
+                        <img src="./assets/img/btn-price.png" alt="">
+                        <div class="box">
+                            <div class="loader-12"></div>
+                        </div>
+                    </a>
+                    <a href="" class="btn-question">
+                        <img src="./assets/img/btn-question.png" alt="">
+                        <div class="box">
+                            <div class="loader-12"></div>
+                        </div>
+                    </a>
+                    <a href="" class="btn-lesson">
+                        <img src="./assets/img/btn-lesson.png" alt="">
+                        <div class="box">
+                            <div class="loader-12"></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <section id="section07" class="section07 genre">
+                <div class="line-text">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    </p>
+                </div>
+                <h1>
+                    GENRE
+                    <span class="subtitle">
+                        ダンスジャンル
+                    </span>
+                </h1>
+                <div class="main-container">
+                    <div class="genre-content">
+                        <a href="">
+                            <img src="./assets/img/hiphop.png" alt="">
+                        </a>
+                        <a href="">
+                            <img src="./assets/img/jazz.png" alt="">
+                        </a>
+                        <a href="">
+                            <img src="./assets/img/kpop.png" alt="">
+                        </a>
+                        <a href="">
+                            <img src="./assets/img/soul.png" alt="">
+                        </a>
+                    </div>
+                    <div class="genre-center">
+                        <a href="">
+                            <img src="./assets/img/viewmore3.png" alt="">
+                        </a>
+                    </div>
+                    <div class="genre-content">
+                        <a href="">
+                            <img src="./assets/img/house.png" alt="">
+                        </a>
+                        <a href="">
+                            <img src="./assets/img/pop.png" alt="">
+                        </a>
+                        <a href="">
+                            <img src="./assets/img/acrobat.png" alt="">
+                        </a>
+                        <a href="">
+                            <img src="./assets/img/ziadance.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section id="section08" class="section08 charm-points">
+                <h1>
+                    CHARM POINTS
+                    <span class="subtitle">
+                        4つの魅力
+                    </span>
+                </h1>
+                <div class="logo-center">
+                    <img src="./assets/img/mark-blue.png" alt="">
+                </div>
+                <div class="main-container">
+                    <div class="card-container">
+                        <div class="point-card">
+                            <div class="top-img">
+                                <img src="./assets/img/point1.png" alt="">
+                            </div>
+                            <div class="point-footer">
+                                <span class="point">POINT</span>
+                                <span class="number">1</span>
+                                <span class="text">国内外の第一線で活躍中の現役プロダンサーから学べる</span>
+                            </div>
+                        </div>
+                        <div class="point-card">
+                            <div class="top-img">
+                                <img src="./assets/img/point2.png" alt="">
+                            </div>
+                            <div class="point-footer">
+                                <span class="point">POINT</span>
+                                <span class="number">2</span>
+                                <span class="text">ダンス初心者大歓迎</span>
+                            </div>
+                        </div>
+                        <div class="point-card">
+                            <div class="top-img">
+                                <img src="./assets/img/point3.png" alt="">
+                            </div>
+                            <div class="point-footer">
+                                <span class="point">POINT</span>
+                                <span class="number">3</span>
+                                <span class="text">3歳から大人まで約40種類の豊富なレッスン</span>
+                            </div>
+                        </div>
+                        <div class="point-card">
+                            <div class="top-img">
+                                <img src="./assets/img/point4.png" alt="">
+                            </div>
+                            <div class="point-footer">
+                                <span class="point">POINT</span>
+                                <span class="number">4</span>
+                                <span class="text">通い続けやすい低価格料金プラン！</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button-container">
+                        <a href="" class="button-purpose">
+                            BY PURPOSE<br>
+                            <span>“目的別で”クラスを探すこんなダンサーになりたい！</span>
+                        </a>
+                        <a href="" class="button-eachcase">
+                            FOR EACH CASE<br>
+                            <span>“お悩み別で”クラスを探す友達を作りたい！ダンスを楽しみたい！</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="line-text">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    </p>
+                </div>
+        </section>
+        <section class="section09">
+            <div class="main-container">
+                <div class="blog-container">
+                    <div class="title">
+                        <img src="./assets/img/mark-black.png" alt="">
+                        <h1>
+                            BLOG <span class="subtitle">RAZARIS Blog and information</span>
+                        </h1>
+                    </div>
+                    <div class="blog-card">
+                        <div class="blog-img">
+                            <img src="./assets/img/blog1.png" alt="">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-cap">
+                                <span class="blog-date">2022.01.23</span>
+                                <span class="blog-category">スタジオNEWS</span>
+                            </div>
+                            <div class="blog-title">
+                                ラザリス大宮3/1オープン！！ラザリス大宮3/1オープン！！ラザリス大宮3/1オープン！！
+                            </div>
+                            <div class="blog-text">
+                                こんにちは！先日ラザリス大宮オープンに向けてポスター撮影をしました。
+                                みんなとても良い表情ですね。ご協力いただいた皆様、ありがとうございました！大宮オープンは3/1からです！…
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-card">
+                        <div class="blog-img">
+                            <img src="./assets/img/blog2.png" alt="">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-cap">
+                                <span class="blog-date">2022.01.23</span>
+                                <span class="blog-category">キャンペーン</span>
+                            </div>
+                            <div class="blog-title">
+                                ラザリス大宮3/1オープン！！ラザリス大宮3/1オープン！！ラザリス大宮3/1オープン！！
+                            </div>
+                            <div class="blog-text">
+                                こんにちは！先日ラザリス大宮オープンに向けてポスター撮影をしました。
+                                みんなとても良い表情ですね。ご協力いただいた皆様、ありがとうございました！大宮オープンは3/1からです！…
+                            </div>
+                        </div>
+                    </div>
+                    <a href="" class="btn-more">Read More</a>
+                </div>
+                <div class="twitter-container">
+                    <div class="title">
+                        <img src="./assets/img/mark-twiter.png" alt="">
+                        <h1>
+                            TWITTER <span class="subtitle">@s_razaris</span>
+                        </h1>
+                    </div>
+                    <div class="twitter-box">
+                        <script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </div>
+                    <a href="" class="btn-more">Read More</a>
+                </div>
+            </div>
+        </section>
+        <section id="section10" class="section10">
+            <h1>
+                ACCESS <span class="subtitle">アクセス</span>
+            </h1>
+
+        </section>
+    </main>
+    <footer>
+        <div>
+            <p onclick="event.stopPropagation();submenu(this)">メニュー1&nbsp;<span>&#9660;</span></p>
+            <div class="submenu">
+                <div><a href="./web-consult.html">メニュー2</a></div>
+                <div><a href="./seo-consult.html">メニュー3</a></div>
+                <div><a href="./content-consult.html">メニュー4</a></div>
+                <div><a href="./web-product.html">メニュー5</a></div>
+                <div><a href="">メニュー6</a></div>
+            </div>
+        </div>
+        <div><a href="./column.html">メニュー7</a></div>
+        <div><a href="./whitepaper.html">メニュー8</a></div>
+        <div><a href="./company.html">メニュー9</a></div>
+        <div><a href="./contact.html">メニュー10</a></div>
+    </footer>
+</div>
+    
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/luxy.js" charset="UTF-8"></script>
+    <script>
+		luxy.init({
+			wrapper: '#luxy',
+			targets : '.luxy-el',
+			wrapperSpeed:  0.08
+		});
+	</script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        slidesPerGroup: 1,
+        loop: true,
+        speed: 1000,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        autoplay: 
+        {
+            delay: 2000,
+        },
+      });
+    </script>
+    <script>
+      var swiper = new Swiper(".mySwiper1", {
+        slidesPerView: 4,
+        spaceBetween: 0,
+        slidesPerGroup: 1,
+        loop: true,
+        speed: 1000,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        autoplay: 
+        {
+            delay: 1000,
+        },
+      });
+    </script>
+    <script>
+        var vSwiper = new Swiper(".vSwiper", {
+            slidesPerView: 3,
+            direction: "vertical",
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            autoplay: 
+            {
+                delay: 1000,
+            },
+        });
+      </script>
+</body>
+</html>
