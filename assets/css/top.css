@@ -159,9 +159,15 @@
 .section01 .mark-fitness {
     position: absolute;
     right: 36px;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 30%;
+    /* transform: translateY(-50%); */
     z-index: 3;
+}
+.section01 .mark-fitness:hover{
+    transition: all 1s;
+    -webkit-transform: rotateZ(360deg);
+    -ms-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
 }
 
 /* section2 slider */
@@ -265,14 +271,20 @@
     position: absolute;
     left: 0;
     top: 0;
+    overflow: hidden;
+    transition: .3s ease-in-out;
     z-index: 1;
+}
+.section03 .view-more:hover {
+    left: -20px;
 }
 .section03 .dancer3 {
     position: absolute;
     top: 0;
     left: 16.7vw;
-    z-index: 1;
     transform: translateX(100%);
+    overflow: hidden;
+    z-index: 1;
 }
 
 /* section04 */
@@ -291,9 +303,13 @@
     position: absolute;
     right: -10px;
     top: 0;
+    overflow: hidden;
+    transition: .3s ease-in-out;
     z-index: 1;
 }
-
+.section04 .view-more:hover {
+    right: -20px;
+}
 /* section05 beginner */
 .section05 {
     position: relative;
@@ -328,8 +344,10 @@
     font-size: 16px;
 }
 .beginner-content .beginner-classmates {
+    position: relative;
     width: 50%;
     margin-top: -120px;
+    overflow: hidden;
 }
 /* section06 */
 .section06 {
@@ -348,7 +366,11 @@
     position: absolute;
     top: -140px;
     left: 7.14vw;
+    transition: .3s ease-in-out;
     z-index: 1;
+}
+.section06 .viewmore2:hover {
+    left: 6.5vw;
 }
 .section06 .button-group {
     position: absolute;
@@ -364,6 +386,7 @@
 .section06 .button-group a {
     position: relative;
     margin-bottom: 36px;
+    overflow: hidden;
 }
 .section06 .button-group a .box{
     position: absolute;
@@ -457,12 +480,32 @@ a:hover .loader-12 {
     align-items: center;
     justify-content: center;
 }
+.genre-center:hover{
+    transition: all 1s;
+    -webkit-transform: rotateZ(360deg);
+    -ms-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
+}
 .section07 .main-container .genre-content {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     padding: 36px;
 }
+.genre-content img:hover {
+	-webkit-transform: rotate(15deg) scale(1.1);
+	transform: rotate(15deg) scale(1.1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+
+
+
+
+
+
+
 
 /* section08 */
 .section08 {
@@ -502,7 +545,9 @@ a:hover .loader-12 {
     margin-right: 0;
 }
 .point-card .top-img {
+    position: relative;
     border-radius: 5px;
+    overflow: hidden;
 }
 .point-card .point-footer {
     margin-top: 12px;
@@ -562,11 +607,23 @@ a:hover .loader-12 {
     background-size: contain;
     background-repeat: no-repeat;
 }
-.section08 .button-container .button-purpose::after {
+.button-purpose::after {
     background-image: url(../img/tri-view-blue.png);
 }
-.section08 .button-container .button-eachcase::after {
+.button-purpose:hover:after {
+    transition: all .5s;
+    -webkit-transform: rotateZ(360deg);
+    -ms-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
+}
+.button-eachcase::after {
     background-image: url(../img/tri-view-yellow.png);
+}
+.button-eachcase:hover:after {
+    transition: all .5s;
+    -webkit-transform: rotateZ(360deg);
+    -ms-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
 }
 .section08 .line-text {
     color: black;
@@ -607,8 +664,10 @@ a:hover .loader-12 {
     margin-bottom: 50px;
 }
 .blog-card .blog-img {
+    position: relative;
     width: 35%;
     margin-right: 30px;
+    overflow: hidden;
 }
 .blog-card .blog-content {
     width: 65%;
