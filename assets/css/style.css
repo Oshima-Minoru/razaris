@@ -28,6 +28,9 @@ a {
     color: inherit;
     text-decoration: none;
 }
+li {
+    list-style: none;
+}
 img {
     vertical-align: middle;
     height: auto;
@@ -108,7 +111,7 @@ header>div>a {
 .menu {
     position: fixed;
     color: white;
-    background-color: rgba(0, 0, 0, .7);
+    background-color: rgba(0, 0, 0, .8);
     right: 0;
     top: 0;
     left: 0;
@@ -117,9 +120,9 @@ header>div>a {
     height: 100vh;
     padding-top: 200px;
     overflow-y: auto;
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(5px);
     font-size: 24px;
-    transform: translateY(-30%);
+    /* transform: translateY(-30%); */
     opacity: 0;
     z-index: -1;
     transition: all .3s ease;
@@ -129,64 +132,210 @@ header>div>a {
     opacity: 1 !important;
     z-index: 999 !important;
 }
-.menu>div {
-    padding: 10px 0;
+
+/* menu */
+.menu {
+    display: flex;
+    align-items: center;
+    padding: 200px 10%;
+    justify-content: center;
+}
+
+.menu-left {
+    width: 30%;
+    padding-right: 5%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.menu-left .logoBox {
+    margin-bottom: 40px;
+}
+.menu-left .social-icons {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.social-icons ul{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.social-icons ul li {
+    padding-right: 8px;
+    list-style: none;
+    display: flex;
+}
+.social-icons ul li a {
     position: relative;
+    color: #fff;
+    font-size: 20px;
 }
-.menu p {
-    cursor: pointer;
-    display: inline;
-    position: relative;
-    padding-right: 1em;
+.social-icons ul li a span {
+    position: absolute;
+    right: -4px;
+    bottom: 4px;
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border-radius: 50%;
+    color: #958443;
+    font-size: 8px;
+    line-height: 10px;
+    text-align: center;
 }
-.submenu {
-    height: 0;
-    overflow: hidden;
-    font-size: .8em;
-    color: #bbbbbb;
-    transition: all .3s ease;
+.social-icons ul li a img {
+    width: 20px;
+    height: 20px;
+    display: flex;
 }
-.submenu>div {
-    padding: 5px 0;
+.fa-twitter:before {
+    content: "\f099";
 }
-.menu a {
-    position: relative;
-    transition: all .3s ease;
+.fa-instagram:before {
+    content: "\f16d";
 }
-.menu p span {
-    transition: all .3s ease;
+.fa-line:before {
+    content: "\f3c0";
+}
+.fa-youtube:before {
+    content: "\f167";
+}
+.fa-facebook:before {
+    content: "\f09a";
+}
+
+.menu-right {
+    width: 70%;
+    padding-left: 5%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-left: solid 1px white;
+}
+.menu-right .nav-list ul:first-child {
+    padding-right: 20px;
+}
+.menu-right .nav-list ul:last-child {
+    padding-left: 20px;
+}
+
+.menu-right .nav-list li .bg {
+    background: white;
+    width: 30px;
+    height: 2px;
     position: absolute;
     right: 0;
+    top: 50%;
+    margin-top: -1px;
+    z-index: -1;
+    transition: all 0.3s;
 }
-.submenu-open span {
-    transform: rotate(180deg) !important;
+.menu-right .nav-list li:hover {
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.menu a::after {
-    border-bottom: 1px solid white;
-    position: absolute;
-    content: '';
-    bottom: -2px;
-    left: -2%;
-    width: 104%;
-    transform: scale(0);
-    transform-origin: 0%;
-    transition: all .3s ease;
+.menu-right .nav-list li:hover .bg {
+    height: 100%;
+    width: 100%;
+    transform: translate(0, -50%);
 }
-.menu a:hover {
-    color: white;
+.menu-right .nav-list li .bg:before {
+  content: '';
+  height: 2px;
+  width: 10px;
+  background: white;
+  position: absolute;
+  right: -1px;      
+  -webkit-transition: all 0.3s;      
+  -o-transition: all 0.3s;      
+  transition: all 0.3s;
 }
-.menu a:hover::after {
-    transform: scale(1);
+.menu-right .nav-list li .bg:before {
+  bottom: 3px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
-
-.line-text {
-    color: white;
-    font-size: 12px;
+.menu-right .nav-item:hover .bg:before {
+  right: 0;
+}
+.menu-right .nav-item:hover .bg:before{
+  bottom: 6px;
+}
+.clearfix {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.clearfix li {
+    width: 98%;
+}
+.clearfix img {
+    width: 75px;
+    height: 60px;
+}
+.menu .menu-bluebtn {
+    width: 100%;
+}
+.menu .menu-bluebtn li {
+    width: 110px;
+    height: 80px;
+    padding: 10px;
+    background-color: #5e9edb;
+    display: flex;
+    align-items: center;
+}
+.menu .menu-bluebtn li:last-child {
     width: 300px;
-    padding: 16px 0 50px 26px;
-    border-left: 1px solid white
+    height: 80px;
+}
+.menu .menu-bluebtn li:last-child a {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
+.menu-right .nav-list {
+    display: flex;
+    text-align: left;
+    width: 100%;
+}
+.menu-right .nav-list ul {
+    width: 50%;
+}
+.menu-right .nav-list li {
+    position: relative;
+    margin-bottom: 10px;
+    padding: 10px 0;
+}
+.inWrap {
+    display: flex;
+    flex-direction: column;
+}
+.inWrap .box.en {
+    font-family: 'Alata', sans-serif;
+    font-size: 16px;
+}
+.menu-right .box.jp {
+    font-size: 10px;
+}
+.inWrap .s {
+    font-size: 10px;
+}
+.inWrap .l {
+    font-size: 16px;
+}
+
+
+/* =========================================================== */
 /* footer */
 footer {
     background-color: #83c0ea;
@@ -272,7 +421,10 @@ footer li {
 }
 
 .social-container {
-    margin-top: 50px;
+    position: absolute;
+    bottom: -50px;
+    right: 36px;
+    z-index: 4;
 }
 .social-container li {
     font-family: 'Alata', sans-serif;
@@ -320,7 +472,7 @@ footer li {
 /* Responsible */
 @media (max-width: 1400px) {
     .menu {
-        padding-top: 150px;
+        padding-top: 200px;
     }
 }
 @media (max-width: 1140px) {
