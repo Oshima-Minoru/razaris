@@ -122,7 +122,6 @@ header>div>a {
     overflow-y: auto;
     backdrop-filter: blur(5px);
     font-size: 24px;
-    /* transform: translateY(-30%); */
     opacity: 0;
     z-index: -1;
     transition: all .3s ease;
@@ -138,7 +137,7 @@ header>div>a {
     display: flex;
     align-items: center;
     padding: 200px 10%;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 .menu-left {
@@ -471,145 +470,82 @@ footer li {
 
 /* Responsible */
 @media (max-width: 1400px) {
-    .menu {
-        padding-top: 200px;
-    }
-}
-@media (max-width: 1140px) {
-    .container {
-        width: 840px;
-    }
-    .page-title h1 {
-        padding-left: 180px;
-    }
-    .page-title h1::before {
-        width: 140px;
-    }
-}
-@media (max-width:1000px) {
-    .page-title-main {
-        font-size: 42px;
-    }
-    .section-title {
-        font-size: 30px;
-        padding-left: 120px;
-    }
-    .section-title::before {
-        width: 100px;
-    }
 }
 @media (max-width: 900px) {
-    .container {
-        width: 720px;
-    }
-    .sp {
-        display: flex;
-    }
-    .pc {
-        display: none;
-    }
-    .page-title-main {
-        font-size: 40px;
-        transform: translateY(0);
-    }
-    .page-title h1 {
-        padding-left: 2em;
-    }
-    .page-title h1::before {
-        width: 1.3em;
-    }
-}
-@media (max-width: 767px) {
-    .container {
-        width: 640px;
-    }
-    .page-title-main {
-        font-size: 36px;
-    }
-    .section-title {
-        font-size: 24px;
-        padding-left: 90px;
-        margin-bottom: 50px;
-    }
-    .section-title::before {
-        width: 70px;
-    }
-    .section-subtitle {
-        margin: 50px 0;
-    }
-}
-@media (max-width: 700px) {
-    .container {
-        width: 100%;
-        padding-left: 30px;
-        padding-right: 30px;
+    header .logo img {
+        height: 80px;
+        width: auto;
     }
     .menu-btn {
-        right: 30px;
-    }
-    .page-title-main {
-        font-size: 32px;
-    }
-}
-@media (max-width: 600px) {
-    .container {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    header>div {
-        padding-left: 20px;
-    }
-    .menu-btn {
-        right: 20px;
-    }
-    .page-title-main {
-        font-size: 26px;
-    }
-    .section-title {
-        font-size: 16px;
-        padding-left: 70px;
-    }
-    .section-title::before {
-        width: 50px;
-    }
-}
-@media (max-width: 500px) {
-    header>div>a {
-        width: 270px;
-    }
-    .menu-btn span {
-        width: 35px;
-        height: 3px;
-        margin: 3px 0;
-    }
-    .menu-btn span:nth-child(3) {
-        width: 18px;
-    }
-    .menu-btn:hover span:nth-child(3) {
-        width: 35px;
-    }
-    .menu-open span:nth-child(1) {
-        transform: rotate(135deg) translate(7px, -6px);
-    }
-    .menu-open span:nth-child(3) {
-        width: 35px;
-        transform: rotate(-135deg) translate(7px, 6px);
+        right: 10px;
     }
     .menu {
-        padding-top: 120px;
+        padding: 150px 10%;
+        flex-direction: column;
     }
-    .page-title-main {
-        font-size: 22px;
+    .menu-left {
+        width: 100%;
+        padding-right: 0;
     }
-    .section-subtitle {
-        font-size: 1em;
+    .menu-left .social-icons {
+        width: 100%;
+        flex-direction: row;
+        margin-bottom: 10px;
     }
+    .social-icons ul li a {
+        font-size: 40px;
+    }
+    .menu-right {
+        width: 100%;
+        padding-left: 0;
+        border-left: none;
+    }
+    .clearfix {
+        flex-wrap: wrap;
+    }
+    .menu .menu-bluebtn li {
+        margin-bottom: 10px;
+    }
+    .menu .menu-bluebtn li {
+        width: 80px;
+        height: 60px;
+    }
+    .menu .menu-bluebtn li:last-child {
+        width: 200px;
+        height: 60px;
+    }
+
+}
+@media (max-width: 767px) {
+
 }
 @media (max-width: 400px) {
-    header>div>a {
-        width: 250px;
+    .menu-btn {
+        padding: 4px 6px;
     }
-    .page-title-main {
-        font-size: 20px;
+    .menu-btn span {
+        width: 36px;
+        height: 3px;
+    }
+    .menu-btn:hover span:nth-child(3) {
+        width: 36px;
+    }
+    .menu-btn:hover span:nth-child(3) {
+        width: 36px;
+    }
+    .menu-open span:nth-child(3) {
+        transform: rotate(-135deg) translate(7px, 8px);
+    }
+    .menu-right .nav-list {
+        flex-direction: column;
+    }
+    .menu-right .nav-list ul {
+        width: 100%;
+    }
+    .menu-right .nav-list ul:first-child {
+        padding-right: 0;
+    }
+    .menu-right .nav-list ul:last-child {
+        padding-left: 0;
     }
 }
