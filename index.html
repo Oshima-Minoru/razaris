@@ -179,7 +179,7 @@
     <div id="luxy">
         <main>
             <section id="section01" class="top-banner" data-props="padding-top,padding-bottom" data-values="45,45">
-                <video autoplay muted  id="topVideo" poster="https://t4.ftcdn.net/jpg/04/48/09/37/360_F_448093765_5IXoB23cC8hgKr6oNmVTh3h4mNml1hp4.jpg" muted="muted" class="js-video-thumb" loop="" data-xblocker="passed" style="visibility: visible;" __idm_id__="11902978">
+                <video autoplay muted id="topVideo" poster="https://t4.ftcdn.net/jpg/04/48/09/37/360_F_448093765_5IXoB23cC8hgKr6oNmVTh3h4mNml1hp4.jpg" muted="muted" class="js-video-thumb" loop="" data-xblocker="passed" style="visibility: visible;" __idm_id__="11902978" playbackRates="0.1">
                     <source src="https://v.ftcdn.net/04/48/09/37/240_F_448093765_5IXoB23cC8hgKr6oNmVTh3h4mNml1hp4_ST.mp4" type="video/mp4">
                 </video>
                 <div class="main-container">
@@ -727,6 +727,12 @@
     </script>
 
     <!-- Initialize Swiper -->
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            document.querySelector('video').playbackRate = 0.5;
+        })
+
+    </script>
     <script>
       var swiper = new Swiper(".mySwiper", {
         slidesPerView: 4,
