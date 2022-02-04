@@ -378,7 +378,33 @@ footer .main-container {
 .footer-right .footer-menu > div {
     border-right: solid 1px white;
 }
-
+.footer-right .social-container {
+    position: relative;
+    margin-top: 50px;
+    bottom: unset;
+    right: unset;
+    text-align: right;
+}
+.footer-right .social-container p {
+    font-size: 12px;
+}
+.footer-right .social-icons ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.footer-right .social-icons ul li {
+    padding-left: 15px;
+    padding-right: 0;
+}
+.footer-right .social-icons ul li a {
+    font-size: 36px;
+}
+.footer-right .social-icons ul li a img {
+    min-width: 40px;
+    height: 40px;
+}
 footer li {
     list-style: none;
 }
@@ -471,6 +497,20 @@ footer li {
 /* Responsible */
 @media (max-width: 1400px) {
 }
+@media (max-width: 1280px) {
+    .footer-left {
+        width: 40%;
+    }
+    .footer-center {
+        width: 20%;
+    }
+    .footer-right {
+        width: 40%;
+    }
+    .footer-right .social-icons ul {
+        justify-content: space-around;
+    }
+}
 @media (max-width: 900px) {
     header .logo img {
         height: 80px;
@@ -517,6 +557,12 @@ footer li {
 
 }
 @media (max-width: 767px) {
+    .footer-right .social-container {
+        text-align: center;
+    }
+    .footer-right .social-icons ul {
+        justify-content: center;
+    }
 
 }
 @media (max-width: 400px) {
@@ -547,5 +593,13 @@ footer li {
     }
     .menu-right .nav-list ul:last-child {
         padding-left: 0;
+    }
+
+    .footer-right .social-icons ul {
+        width: 100%;
+        justify-content: space-around;
+    }
+    .footer-right .social-icons ul li {
+        padding: 0;
     }
 }

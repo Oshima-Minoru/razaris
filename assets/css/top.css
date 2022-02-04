@@ -35,6 +35,7 @@
 }
 .top-banner .banner-text > div {
     display: flex;
+    justify-content: center;
     left: 50%;
     top: 50%;
     font-family: 'Alata', sans-serif;
@@ -70,6 +71,7 @@
     left: 0;
     bottom: -175px;
     z-index: 2;
+    width: 400px;
 }
 .top-banner .banner-dancer2 {
     position: absolute;
@@ -870,6 +872,23 @@ a:hover .loader-12 {
 
 
 @media (max-width: 1280px) {
+    .top-banner .banner-dancer1 {
+        width: 360px;
+    }
+    .top-banner .banner-text {
+        width: 40%;
+    }
+    .top-banner .banner-subtext {
+        font-size: 6vw;
+    }
+    .top-banner .banner-teacher {
+        width: 560px;
+        bottom: -30px;
+    }
+    .social-container {
+        bottom: -20px;
+    }
+
     .section01 {
         margin-top: -60px;
     }
@@ -915,6 +934,36 @@ a:hover .loader-12 {
     }
 }
 @media (max-width: 1024px) {
+    .top-banner .banner-dancer1 {
+        width: 300px;
+    }
+    .top-banner .banner-subtext {
+        font-size: 4vw;
+    }
+    .top-banner .banner-teacher {
+        width: 450px;
+        bottom: -30px;
+    }
+    .top-banner .banner-teacher-text {
+        bottom: 55px;
+    }
+    .top-banner .banner-teacher-text p {
+        font-size: 24px;
+    }
+    .social-container p {
+        font-size: 10px;
+    }
+    .top-banner .social-icons ul li a {
+        font-size: 32px;
+    }
+    .top-banner .social-icons ul li a img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .section01 .mark-fitness {
+        top: 45%;
+    }
     .line-text {
         font-size: 10px;
         width: 190px;
@@ -946,15 +995,11 @@ a:hover .loader-12 {
     }
 }
 @media (max-width: 767px) {
-    .beginner-content .beginner-text {
-        font-size: 12px;
-        padding: 40px 0;
-        width: 100%;
+    .top-banner .banner-text .inner-el {
+        font-size: 2rem;
+        padding: 0 4px;
     }
-    .beginner-content .beginner-classmates {
-        width: 100%;
-        margin-top: 0;
-    }
+
     .section01 {
         margin-top: 0px;
     }
@@ -1048,12 +1093,12 @@ a:hover .loader-12 {
     .footer-right {
         width: 100%;
     }
-    .social-container {
+    .footer-right .social-container {
         position: relative;
         bottom: 0;
         right: 0;
     }
-    .social-icons ul li a img {
+    .footer-right .social-icons ul li a img {
         width: 40px;
         height: 40px;
     }
@@ -1065,6 +1110,61 @@ a:hover .loader-12 {
    
 }
 @media (max-width: 600px) {
+    .top-banner .banner-text {
+        top: 30%;
+        width: 60%;
+    }
+    .top-banner .banner-subtext {
+        left: 30px;
+        bottom: 20%;
+    }
+    .top-banner .banner-dancer1 {
+        width: 200px;
+        bottom: 15%;
+    }
+    .top-banner .banner-dancer2 {
+        width: 150px;
+    }
+    .top-banner .banner-teacher {
+        width: 100%;
+        bottom: 0px;
+    }
+    .top-banner .banner-teacher-text {
+        bottom: 70px;
+    }
+    .top-banner .banner-teacher-text p {
+        font-size: 18px;
+    }
+    .social-container {
+        bottom: 0px;
+    }
+
+    .section05 .main-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .section05 .beginner-content {
+        margin-left: 0;
+        flex-direction: column;
+    }
+    .beginner-content .beginner-text {
+        padding: unset;
+        width: 100%;
+    }
+    .beginner-content .beginner-classmates {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .section08 .button-container a {
+        width: 100%;
+        font-size: 20px;
+    }
+    .section08 .button-container a span {
+        font-size: 10px;
+        padding-right: 20px;
+    }
+
     .blog-card {
         display: flex;
         margin-bottom: 50px;
@@ -1125,10 +1225,11 @@ a:hover .loader-12 {
         padding: 0 20px;
     }
     .section06 .button-group {
-        top: -30px;
+        top: 10px;
+        padding-left: 0;
     }
     .section06 .button-group a {
-        width: 60%;
+        width: 70%;
     }
     .section07 .main-container .genre-center {
         width: 30%;
