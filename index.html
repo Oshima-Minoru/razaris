@@ -180,7 +180,7 @@
         <main>
             <section id="section01" class="top-banner" data-props="padding-top,padding-bottom" data-values="45,45">
                 <video autoplay muted id="topVideo" poster="https://t4.ftcdn.net/jpg/04/48/09/37/360_F_448093765_5IXoB23cC8hgKr6oNmVTh3h4mNml1hp4.jpg" muted="muted" class="js-video-thumb" loop="" data-xblocker="passed" style="visibility: visible;" __idm_id__="11902978" playbackRates="0.1">
-                    <source src="https://v.ftcdn.net/04/48/09/37/240_F_448093765_5IXoB23cC8hgKr6oNmVTh3h4mNml1hp4_ST.mp4" type="video/mp4">
+                    <source src="https://v.ftcdn.net/04/48/09/38/700_F_448093812_rDXJckNQewrt40mZOoKi8KOc2uJFhSHm_ST.mp4" type="video/mp4">
                 </video>
                 <div class="main-container">
                     <div class="banner-dancer1 luxy-el" data-speed-y="-60" data-offset="0" data-horizontal="1" data-speed-x="-20">
@@ -291,10 +291,10 @@
                         </span>
                     </h1>
                     <div class="movie-container">
-                        <a href="" class="view-more luxy-el" data-speed-y="-20" data-offset="900" style="transform: translate3d(0px, 227.6px, 0px);">
+                        <a href="" class="view-more luxy-el" data-speed-y="-20" data-offset="700" style="transform: translate3d(0px, 227.6px, 0px);">
                             <img src="./assets/img/viewmore1.png" alt="">
                         </a>
-                        <div class="dancer3 luxy-el effect-shine" data-speed-y="-40" data-offset="1600" style="transform: translate3d(0px, 227.6px, 0px);">
+                        <div class="dancer3 luxy-el effect-shine" data-speed-y="-30" data-offset="1200" style="transform: translate3d(0px, 227.6px, 0px);">
                             <img src="./assets/img/dancer3.png" alt="">
                         </div>
                         <div class="container-takaki">
@@ -348,19 +348,6 @@
                     INSTRUCTOR
                 </h1>
                 <div class="photo-container">
-                    <!-- <div class="photo luxy-el" data-speed-y="-20" data-offset="840" style="transform: translate3d(0px, 227.6px, 0px);">
-                        <img src="./assets/img/photo1.png" alt="">
-                    </div>
-                    <div class="photo luxy-el" data-speed-y="-30" data-offset="1280" style="transform: translate3d(0px, 227.6px, 0px);">
-                        <img src="./assets/img/photo2.png" alt="">
-                    </div>
-                    <div class="photo luxy-el" data-speed-y="-40" data-offset="1715" style="transform: translate3d(0px, 227.6px, 0px);">
-                        <img src="./assets/img/photo3.png" alt="">
-                    </div>
-                    <div class="photo luxy-el" data-speed-y="-50" data-offset="2155" style="transform: translate3d(0px, 227.6px, 0px);">
-                        <img src="./assets/img/photo4.png" alt="">
-                    </div> -->
-
                     <div class="swiper mySwiper1">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
@@ -738,6 +725,7 @@
         slidesPerView: 4,
         spaceBetween: 30,
         slidesPerGroup: 1,
+        centeredSlides: true,
         loop: true,
         speed: 1000,
         loopFillGroupWithBlank: true,
@@ -752,6 +740,32 @@
         autoplay: 
         {
             delay: 2000,
+        },
+        breakpoints: {
+            300: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+            },
+            400: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            700: {
+                slidesPerView: 4,
+                spaceBetween: 10,
+            },
+            1024: {
+                slidesPerView: 4,
+                spaceBetween: 20,
+            },
+            1280: {
+                slidesPerView: 4,
+                spaceBetween: 30,
+            },
+            1700: {
+                slidesPerView: 5,
+                spaceBetween: 30,
+            }
         },
       });
     </script>
@@ -794,6 +808,28 @@
             // {
             //     delay: 1000,
             // },
+            breakpoints: {
+                300: {
+                    slidesPerView: 2,
+                    spaceBetween: 4,
+                },
+                400: {
+                    slidesPerView: 3,
+                    spaceBetween: 6,
+                },
+                700: {
+                    slidesPerView: 3,
+                    spaceBetween: 10,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 15,
+                },
+                1400: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                },
+            },
         });
     </script>
     <script type="text/javascript">

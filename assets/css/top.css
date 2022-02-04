@@ -31,6 +31,7 @@
 .top-banner .banner-text img {
     width: auto;
     height: auto;
+    filter: blur(3px);
 }
 .top-banner .banner-text > div {
     display: flex;
@@ -64,8 +65,6 @@
     width: auto;
     height: auto;
 }
-
-
 .top-banner .banner-dancer1 {
     position: absolute;
     left: 0;
@@ -289,6 +288,9 @@
     height: 460px;
     position: relative;
 }
+.section03 .vertical-slider .swiper-slide a {
+    height: 100%;
+}
 .section03 .vertical-slider::before {
     content: "";
     position: absolute;
@@ -317,7 +319,7 @@
     bottom: unset;
     width: 40px;
     height: 16px;
-    top: 32px;
+    top: 32px !important;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -346,9 +348,10 @@
 .section03 .view-more {
     position: absolute;
     left: 0;
-    top: 0;
+    top: 20%;
     overflow: hidden;
     transition: .3s ease-in-out;
+    width: 30vw;
     z-index: 1;
 }
 .section03 .view-more:hover {
@@ -356,6 +359,7 @@
 }
 .section03 .dancer3 {
     position: absolute;
+    width: 16vw;
     top: 0;
     left: 16.7vw;
     transform: translateX(100%);
@@ -385,6 +389,7 @@
     top: 0;
     overflow: hidden;
     transition: .3s ease-in-out;
+    width: 30vw;
     z-index: 1;
 }
 .section04 .view-more:hover {
@@ -417,6 +422,7 @@
     margin-top: 40px;
     margin-left: 40px;
     display: flex;
+    align-items: center;
 }
 .beginner-content .beginner-text {
     padding: 40px;
@@ -444,6 +450,7 @@
 }
 .section06 .viewmore2 {
     position: absolute;
+    width: 30vw;
     top: -140px;
     left: 7.14vw;
     transition: .3s ease-in-out;
@@ -467,6 +474,7 @@
     position: relative;
     margin-bottom: 36px;
     overflow: hidden;
+    width: 35%;
 }
 .section06 .button-group a .box{
     position: absolute;
@@ -576,6 +584,9 @@ a:hover .loader-12 {
     flex-wrap: wrap;
     padding: 36px;
 }
+.section07 .main-container .genre-content a {
+    width: 16vw;
+}
 .genre-content img:hover {
 	-webkit-transform: rotate(15deg) scale(1.1);
 	transform: rotate(15deg) scale(1.1);
@@ -609,15 +620,16 @@ a:hover .loader-12 {
 }
 .section08 .card-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 .section08 .card-container .point-card {
-    margin-right: 55px;
+    /* margin-right: 55px; */
     margin-bottom: 66px;
     width: 285px;
 }
 .section08 .card-container .point-card:last-child {
-    margin-right: 0;
+    /* margin-right: 0; */
 }
 .point-card .top-img {
     position: relative;
@@ -655,7 +667,7 @@ a:hover .loader-12 {
 }
 .section08 .button-container a {
     position: relative;
-    width: 560px;
+    width: 40vw;
     height: 100px;
     background-color: #165681;
 
@@ -828,6 +840,7 @@ a:hover .loader-12 {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 .blue-btn {
     display: flex;
@@ -836,6 +849,7 @@ a:hover .loader-12 {
 
     width: 300px;
     height: 70px;
+    margin-bottom: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -855,27 +869,271 @@ a:hover .loader-12 {
 
 
 
-@media (min-width: 1401px) {
+@media (max-width: 1280px) {
+    .section01 {
+        margin-top: -60px;
+    }
+    .section01 .section01-bg {
+        width: 90%;
+    }
+    .section01 .line-text {
+        top: 60%;
+    }
+    .section01 .mark-fitness {
+        width: 120px;
+    }
+    .section02 .swiper-button-next, .swiper-button-prev {
+        top: 55% !important;
+    }
 
+/* section03 */
+    .section03 .vertical-slider {
+        height: 370px;
+    }
+    .section03 .dancer3 {
+        top: -20%;
+    }
+
+    .beginner-content .beginner-text {
+        font-size: 14px;
+    }
+/* section07 */
+    .section07 .main-container .genre-content {
+        padding: 20px;
+    }
+
+    .section08 {
+        margin-top: 100px;
+    }
+    .section08 .button-container a {
+        font-size: 26px;
+        padding-right: 50px;
+    }
+    .section08 .button-container a span {
+        font-size: 12px;
+        padding-right: 50px;
+    }
 }
-@media (max-width: 1400px) {
-
+@media (max-width: 1024px) {
+    .line-text {
+        font-size: 10px;
+        width: 190px;
+        padding: 5px 5px 15px 8px;
+    }
+    .section02 .swiper-button-next, .swiper-button-prev {
+        top: 60% !important;
+    }
+    .section02 {
+        padding-bottom: 40px;
+    }
+    .section03 .dancer3 {
+        top: -10%;
+    }
+    #bg-section06 {
+        height: 700px !important;
+    }
+    .section03 .view-more {
+        top: 10%;
+    }
 }
 @media (max-width: 900px) {
- 
+    .section03 .dancer3 {
+        top: -50%;
+    }
+    .section03 .movie-container {
+        padding-left: 20%;
+        padding-right: 40px;
+    }
 }
 @media (max-width: 767px) {
-
+    .beginner-content .beginner-text {
+        font-size: 12px;
+        padding: 40px 0;
+        width: 100%;
+    }
+    .beginner-content .beginner-classmates {
+        width: 100%;
+        margin-top: 0;
+    }
+    .section01 {
+        margin-top: 0px;
+    }
+    .section01 .mark-fitness {
+        width: 80px;
+        right: 15px;
+    }
+    .section01 .line-text {
+        top: 49%;
+        left: 5vw;
+        padding: 5px 5px 15px 8px;
+        width: 280px;
+    }
+    .section02 .main-container {
+        padding: 0 50px;
+    }
+    .section03 .movie-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .section03 .vertical-slider {
+        height: 300px;
+    }
+    .section03 .dancer3 {
+        top: -20%;
+        left: 3vw;
+    }
+    #bg-section06 {
+        height: 500px !important;
+        top: 300px;
+    }
+    .section06 .viewmore2 {
+        top: -50%;
+        left: 0;
+        width: 30vw;
+    }
+    .section06 .button-group {
+        top: 0;
+        padding-top: 0;
+    }
+    .section06 .button-group a {
+        width: 40%;
+    }
+    .section07 .main-container {
+        flex-direction: column;
+        margin-top: -100px;
+        padding-bottom: 150px;
+    }
+    .section07 .main-container .genre-center {
+        position: absolute;
+        top: 10%;
+        width: 25%;
+    }
+    .section08 .main-container {
+        clip-path: polygon(100% 0%, 0 4%, 0% 100%, 100% 96%);
+    }
+    .section08 .button-container a {
+        width: 90%;
+    }
+    .section08 .button-container a::after {
+        width: 80px;
+        height: 80px;
+        top: 50px;
+        right: -20px;
+    }
+    .section09 {
+        margin: 50px 0;
+    }
+    .section09 .main-container {
+        flex-direction: column;
+    }
+    .blog-container {
+        width: 100%;
+        border: none;
+        padding: 0;
+    }
+    .twitter-container {
+        width: 100%;
+        margin-top: 40px;
+    }
+/* footer     */
+    footer .main-container {
+        flex-direction: column;
+    }
+    .footer-left {
+        width: 100%;
+    }
+    .footer-center {
+        margin: 20px 0;
+    }
+    .footer-right {
+        width: 100%;
+    }
+    .social-container {
+        position: relative;
+        bottom: 0;
+        right: 0;
+    }
+    .social-icons ul li a img {
+        width: 40px;
+        height: 40px;
+    }
+    .copyright {
+        margin-top: 20px;
+    }
 }
 @media (max-width: 700px) {
    
 }
 @media (max-width: 600px) {
-   
+    .blog-card {
+        display: flex;
+        margin-bottom: 50px;
+        flex-direction: column;
+    }
+    .blog-card .blog-img {
+        width: 100%;
+        margin-right: 0;
+    }
+    .blog-card .blog-img img {
+        width: 100%;
+    }
+    .blog-card .blog-content {
+        margin-top: 20px;
+        width: 100%;
+    }
 }
 @media (max-width: 500px) {
    
 }
 @media (max-width: 400px) {
-   
+    h1 {
+        font-size: 24px;
+    }
+    .subtitle {
+        font-size: 12px;
+        margin-left: 20px;
+    }
+    .section03 {
+        margin-bottom: 40px;
+    }
+    .section03 .dancer3 {
+        top: -50%;
+    }
+    .section03 .container-takaki .takaki {
+        margin-right: 4px;
+    }
+    .section03 .vertical-slider {
+        height: 135px;
+    }
+    .section05 h1 {
+        margin-top: 0;
+        margin-left: 0;
+    }
+    .section05 .main-container {
+        padding: 65px 20px 105px 20px;
+    }
+    .section05 .beginner-content {
+        margin-top: 0;
+        padding: unset;
+        flex-direction: column;
+    }
+    .section05 .main-container {
+        clip-path: polygon(0 0, 100% 4%, 100% 100%, 0 96%);
+    }
+    .section05 .beginner-content {
+        margin: unset;
+        padding: 0 20px;
+    }
+    .section06 .button-group {
+        top: -30px;
+    }
+    .section06 .button-group a {
+        width: 60%;
+    }
+    .section07 .main-container .genre-center {
+        width: 30%;
+    }
+    .section07 .main-container .genre-content a {
+        width: 30vw;
+    }
 }
