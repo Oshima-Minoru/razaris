@@ -348,14 +348,14 @@
 .section03 .view-more {
     position: absolute;
     left: 0;
-    top: 20%;
+    top: 30%;
     overflow: hidden;
-    transition: .3s ease-in-out;
     width: 30vw;
     z-index: 1;
 }
 .section03 .view-more:hover {
     left: -20px;
+    transition: .3s ease-in-out;
 }
 .section03 .dancer3 {
     position: absolute;
@@ -386,14 +386,14 @@
 .section04 .view-more {
     position: absolute;
     right: -10px;
-    top: 0;
+    top: 30%;
     overflow: hidden;
-    transition: .3s ease-in-out;
     width: 30vw;
     z-index: 1;
 }
 .section04 .view-more:hover {
     right: -20px;
+    transition: .3s ease-in-out;
 }
 /* section05 beginner */
 .section05 {
@@ -453,11 +453,11 @@
     width: 30vw;
     top: -140px;
     left: 7.14vw;
-    transition: .3s ease-in-out;
     z-index: 1;
 }
 .section06 .viewmore2:hover {
     left: 6.5vw;
+    transition: .3s ease-in-out;
 }
 .section06 .button-group {
     position: absolute;
