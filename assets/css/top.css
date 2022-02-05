@@ -407,10 +407,11 @@
     clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
     padding-top: 65px;
     padding-bottom: 105px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 .section05 h1 {
     margin-top: 110px;
-    margin-left: 40px;
 }
 .section05 .line-text {
     color: black;
@@ -422,12 +423,11 @@
 }
 .section05 .beginner-content {
     margin-top: 40px;
-    margin-left: 40px;
     display: flex;
     align-items: center;
 }
 .beginner-content .beginner-text {
-    padding: 40px;
+    padding-right: 40px;
     width: 50%;
     font-size: 16px;
 }
@@ -730,7 +730,12 @@ a:hover .loader-12 {
 }
 .section09 .main-container .title {
     display: flex;
+    align-items: center;
     margin-bottom: 20px;
+}
+.section09 .main-container .title img {
+    width: 57px;
+    height: 53px;
 }
 .btn-more {
     position: relative;
@@ -881,6 +886,10 @@ a:hover .loader-12 {
     .top-banner .banner-subtext {
         font-size: 6vw;
     }
+    .top-banner .banner-subtext span {
+        font-size: 2vw;
+        padding-left: 2vw;
+    }
     .top-banner .banner-teacher {
         width: 560px;
         bottom: -30px;
@@ -938,7 +947,7 @@ a:hover .loader-12 {
         width: 300px;
     }
     .top-banner .banner-subtext {
-        font-size: 4vw;
+        left: 36px;
     }
     .top-banner .banner-teacher {
         width: 450px;
@@ -981,9 +990,6 @@ a:hover .loader-12 {
     #bg-section06 {
         height: 700px !important;
     }
-    .section03 .view-more {
-        top: 10%;
-    }
 }
 @media (max-width: 900px) {
     .section03 .dancer3 {
@@ -1015,6 +1021,9 @@ a:hover .loader-12 {
     }
     .section02 .main-container {
         padding: 0 50px;
+    }
+    .section03 .view-more {
+        top: 45%;
     }
     .section03 .movie-container {
         padding-left: 20px;
@@ -1052,6 +1061,7 @@ a:hover .loader-12 {
         position: absolute;
         top: 10%;
         width: 25%;
+        left: 50%;
     }
     .section08 .main-container {
         clip-path: polygon(100% 0%, 0 4%, 0% 100%, 100% 96%);
@@ -1190,8 +1200,8 @@ a:hover .loader-12 {
         font-size: 24px;
     }
     .subtitle {
-        font-size: 12px;
-        margin-left: 20px;
+        font-size: 10px;
+        margin-left: 4px;
     }
     .section03 {
         margin-bottom: 40px;

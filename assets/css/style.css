@@ -23,6 +23,7 @@ h1 {
     font-family: 'Noto Sans JP', sans-serif;
     font-size: 14px;
     margin-left: 36px;
+    display: block;
 }
 a {
     color: inherit;

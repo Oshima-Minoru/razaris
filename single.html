@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>razaris</title>
+    
+    <link rel="shortcut icon" href="https://www.razaris.jp/wp/wp-content/themes/razaris/images/favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="icon" href="https://www.razaris.jp/wp/wp-content/themes/razaris/images/favicon.ico" type="image/vnd.microsoft.icon">
+
+    <link rel="stylesheet" href="./assets/css/fontawesome.css">
+    <link rel="stylesheet" href="./assets/css/brands.css">
+    <link rel="stylesheet" href="./assets/css/solid.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/top.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div>
+            <div class="logo">
+                <img src="./assets/img/logo.png" alt="">
+            </div>
+            <div class="menu-btn" onclick="menuClick(this)">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    <div class="menu" onclick="menuClose()">
+        <div class="menu-left">
+            <div class="logoBox">
+                <img src="https://www.razaris.jp/wp/wp-content/themes/razaris/images/header_logo.png" alt="">
+            </div>
+            <div class="social-icons">
+                <ul>
+                    <li><a href="https://twitter.com/s_razaris" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/razaris_studio/" target="_blank"><i class="fab fa-instagram"></i><span>1</span></a></li>
+                    <li><a href="https://www.instagram.com/razaris_musashiurawa/" target="_blank"><i class="fab fa-instagram"></i><span>2</span></a></li>
+                </ul>
+                <ul>
+                    <li><a href="https://line.me/R/ti/p/%40sju3052e" target="_blank"><i class="fab fa-line"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCtfkmYhUdSObCA72cV7-EbQ" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="https://www.facebook.com/%E3%83%A9%E3%82%B6%E3%83%AA%E3%82%B9-891098024272614/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="menu-right">
+            <div class="nav-list">
+                <ul>
+                    <li>
+                        <a class="nav-item" href="https://www.razaris.jp/beginners">
+                            <div class="inWrap">
+                                <div class="box en">FOR BEGINNERS</div>
+                                <div class="box jp">はじめての方へ</div>
+                            </div>
+                            <span class="bg"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-item" href="https://www.razaris.jp/instructor">
+                            <div class="inWrap">
+                                <div class="box en">INSTRUCTOR</div>
+                                <div class="box jp">インストラクター</div>
+                            </div>
+                            <span class="bg"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-item" href="https://www.razaris.jp/guide">
+                            <div class="inWrap">
+                                <div class="box en">BEGINNERS GUIDE</div>
+                                <div class="box jp">体験・入会案内</div>
+                            </div>
+                            <span class="bg"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-item" href="https://www.razaris.jp/price">
+                            <div class="inWrap">
+                                <div class="box en">PRICE&amp;CLASS</div>
+                                <div class="box jp">料金表＆クラス紹介</div>
+                            </div>
+                            <span class="bg"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-item" href="https://www.razaris.jp/qa">
+                            <div class="inWrap">
+                                <div class="box en">Q&amp;A</div>
+                                <div class="box jp">よくある質問</div>
+                            </div>
+                            <span class="bg"></span>
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a class="nav-item" href="https://www.razaris.jp/schedule#scheImg">
+                            <div class="inWrap">
+                                <div class="box en">Lesson Schedule</div>
+                                <div class="box jp">レッスンスケジュール</div>
+                            </div>
+                            <span class="bg"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-item" href="https://www.razaris.jp/blog">
+                            <div class="inWrap">
+                                <div class="box en">BLOG</div>
+                                <div class="box jp">ブログ</div>
+                            </div>
+                            <span class="bg"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-item" href="https://www.razaris.jp/access">
+                            <div class="inWrap">
+                                <div class="box en">ACCESS</div>
+                                <div class="box jp">スタジオ案内</div>
+                            </div>
+                            <span class="bg"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-item" href="https://www.razaris.jp/contact">
+                            <div class="inWrap">
+                                <div class="box en">CONTACT</div>
+                                <div class="box jp">お問い合わせ</div>
+                            </div>
+                            <span class="bg"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-item" href="https://www.razaris.jp/fitness" target="_blank">
+                            <div class="inWrap">
+                                <div class="box en">Fitness</div>
+                                <div class="box jp">フィットネス</div>
+                            </div>
+                            <span class="bg"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu-bluebtn">
+                <ul class="clearfix">
+                    <li>
+                        <a href="tel:09051921616">
+                            <img src="https://www.razaris.jp/wp/wp-content/themes/razaris/images/navi_tel.png" alt="Tel">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.razaris.jp/contact">
+                            <img src="https://www.razaris.jp/wp/wp-content/themes/razaris/images/navi_mail.png" alt="Mail">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://line.me/R/ti/p/%40sju3052e" target="_blank">
+                            <img src="https://www.razaris.jp/wp/wp-content/themes/razaris/images/navi_line.png" alt="Line">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.razaris.jp/schedule">
+                            <img src="https://www.razaris.jp/wp/wp-content/themes/razaris/images/navi_trial.png" alt="">
+                            <div class="inWrap">
+                                <p class="s">体験予約はこちら</p>
+                                <p class="l">体験レッスン</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <main>
+        <section id="section01" class="top-banner" data-props="padding-top,padding-bottom" data-values="45,45">
+            <div class="main-container">
+                <div class="social-container">
+                    <div class="social-icons">
+                        <ul>
+                            <li><a href="https://twitter.com/s_razaris" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="https://www.instagram.com/razaris_studio/" target="_blank"><i class="fab fa-instagram"></i><span>1</span></a></li>
+                            <li><a href="https://www.instagram.com/razaris_musashiurawa/" target="_blank"><i class="fab fa-instagram"></i><span>2</span></a></li>
+                            <li><a href="https://line.me/R/ti/p/%40sju3052e" target="_blank"><i class="fab fa-line"></i></a></li>
+                            <li><a href="https://www.youtube.com/channel/UCtfkmYhUdSObCA72cV7-EbQ" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                            <li><a href="https://www.facebook.com/%E3%83%A9%E3%82%B6%E3%83%AA%E3%82%B9-891098024272614/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href="https://ameblo.jp/razarisdanceandfitness/" target="_blank"><img src="./assets/img/fa-blog.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="main-container">
+                <div class="page-title">
+                    <img src="./assets/img/mark-black.png" alt="">
+                    <p>ページタイトル</p>
+                </div>
+                <div class="page-content">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    </p>
+                </div>    
+            </div>
+        </section>
+        <section id="section10" class="section10">
+            <h1>
+                ACCESS <span class="subtitle">アクセス</span>
+            </h1>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1922.9398902011635!2d139.63848699033758!3d35.84933406135089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018eb6c1aa24273%3A0x673429aa1a81c50f!2zUkFaQVJJUyDjg4Djg7Pjgrkm44OV44Kj44OD44OI44ON44K5!5e0!3m2!1sja!2sjp!4v1604991293645!5m2!1sja!2sjp" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <div class="main-container">
+                <div class="contact-title">
+                    CONTACT
+                </div>
+                <div class="contact-subtitle">
+                    メールでのお問い合わせ　受付時間/24時間365日
+                </div>
+                <div class="button-container">
+                    <a href="" class="blue-btn">
+                        <img src="./assets/img/icon-phone.png" alt="">
+                        <span>090-5192-1616</span>
+                    </a>
+                    <a href="" class="blue-btn">
+                        <img src="./assets/img/icon-mail.png" alt="">
+                        <span>メールでのお問い合わせ</span>
+                    </a>
+                    <a href="" class="blue-btn">
+                        <img src="./assets/img/icon-ninja.png" alt="">
+                        <span>体験予約はこちら</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="main-container">
+            <div class="footer-left">
+                <p>
+                    〒336-0031<br>
+                    埼玉県さいたま市南区鹿手袋4-3-4（受付2F）<br>
+                    TEL : 090-5192-1616
+                </p>
+                <div class="box-text">
+                    JR武蔵野線、埼京線武蔵浦和駅徒歩10分
+                </div>
+                <p>
+                    ダンス初心者に人気のスタジオ。国内で活躍中のプロダンサーが丁寧に教えてくれる！40代に人気のフィットネスプログラムも豊富にラインナップ！少人数制で安心。体験予約受付中。
+                </p>
+            </div>
+            <div class="footer-center">
+                <img src="./assets/img/mark-white.png" alt="">
+            </div>
+            <div class="footer-right">
+                <div class="footer-menu">
+                    <ul>
+                        <li><a href="./beginners.html">FOR BEGINNERS</a></li>
+                        <li><a href="./instructor.html">INSTRUCTOR</a></li>
+                        <li><a href="./guide.html">BEGINNERS GUIDE</a></li>
+                        <li><a href="./faq.html">Q&A</a></li>
+                        <li><a href="./schedule.html">Lesson Schedule</a></li>
+                        <li><a href="./blog.html">BLOG</a></li>
+                        <li><a href="./access.html">ACCESS</a></li>
+                        <li><a href="./contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <div class="social-container">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    </p>
+                    <div class="social-icons">
+                        <ul>
+                            <li><a href="https://twitter.com/s_razaris" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="https://www.instagram.com/razaris_studio/" target="_blank"><i class="fab fa-instagram"></i><span>1</span></a></li>
+                            <li><a href="https://www.instagram.com/razaris_musashiurawa/" target="_blank"><i class="fab fa-instagram"></i><span>2</span></a></li>
+                            <li><a href="https://line.me/R/ti/p/%40sju3052e" target="_blank"><i class="fab fa-line"></i></a></li>
+                            <li><a href="https://www.youtube.com/channel/UCtfkmYhUdSObCA72cV7-EbQ" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                            <li><a href="https://www.facebook.com/%E3%83%A9%E3%82%B6%E3%83%AA%E3%82%B9-891098024272614/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href="https://ameblo.jp/razarisdanceandfitness/" target="_blank"><img src="./assets/img/fa-blog.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">© RIZARIS All Rights Reserved.</div>
+    </footer>
+</div>
+    
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/luxy.js" charset="UTF-8"></script>
+    <script>
+		luxy.init({
+			wrapper: '#luxy',
+			targets : '.luxy-el',
+			wrapperSpeed:  0.08
+		});
+	</script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            document.querySelector('video').playbackRate = 0.5;
+        })
+
+    </script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        slidesPerGroup: 1,
+        centeredSlides: true,
+        loop: true,
+        speed: 1000,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        autoplay: 
+        {
+            delay: 2000,
+        },
+        breakpoints: {
+            300: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+            },
+            400: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            700: {
+                slidesPerView: 4,
+                spaceBetween: 10,
+            },
+            1024: {
+                slidesPerView: 4,
+                spaceBetween: 20,
+            },
+            1280: {
+                slidesPerView: 4,
+                spaceBetween: 30,
+            },
+            1700: {
+                slidesPerView: 5,
+                spaceBetween: 30,
+            }
+        },
+      });
+    </script>
+    <script>
+      var swiper = new Swiper(".mySwiper1", {
+        slidesPerView: 4,
+        spaceBetween: 0,
+        slidesPerGroup: 1,
+        loop: true,
+        speed: 1000,
+        loopFillGroupWithBlank: true,
+        centeredSlides: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        autoplay: 
+        {
+            delay: 1000,
+            disableOnInteraction: true,
+            reverseDirection: true,
+        },
+      });
+    </script>
+    <script>
+        var vSwiper = new Swiper(".vSwiper", {
+            slidesPerView: 3,
+            direction: "vertical",
+            spaceBetween: 20,
+            loop: false,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            // autoplay: 
+            // {
+            //     delay: 1000,
+            // },
+            breakpoints: {
+                300: {
+                    slidesPerView: 2,
+                    spaceBetween: 4,
+                },
+                400: {
+                    slidesPerView: 3,
+                    spaceBetween: 6,
+                },
+                700: {
+                    slidesPerView: 3,
+                    spaceBetween: 10,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 15,
+                },
+                1400: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                },
+            },
+        });
+    </script>
+    <script type="text/javascript">
+        function selectVideo() {
+            var video = document.getElementById('myVideo');
+            var source = document.getElementById('videoSrc');
+
+            source.setAttribute('src', 'https://v.ftcdn.net/04/48/09/37/240_F_448093765_5IXoB23cC8hgKr6oNmVTh3h4mNml1hp4_ST.mp4');
+
+            video.load();
+            video.play();
+
+            fetchVideoAndPlay();
+        }
+
+        function selectVideo1() {
+            var video = document.getElementById('myVideo');
+            var source = document.getElementById('videoSrc');
+
+            source.setAttribute('src', 'https://v.ftcdn.net/04/48/09/38/700_F_448093869_Vq3X20FxTqQklXRP7B7qhKaOr8yYSsgb_ST.mp4');
+
+            video.load();
+            video.play();
+        }
+        function selectVideo2() {
+            var video = document.getElementById('myVideo');
+            var source = document.getElementById('videoSrc');
+
+            source.setAttribute('src', 'https://v.ftcdn.net/04/48/09/38/700_F_448093812_rDXJckNQewrt40mZOoKi8KOc2uJFhSHm_ST.mp4');
+
+            video.load();
+            video.play();
+        }
+        function selectVideo3() {
+            var video = document.getElementById('myVideo');
+            var source = document.getElementById('videoSrc');
+
+            source.setAttribute('src', 'https://v.ftcdn.net/04/48/09/32/700_F_448093206_kaLBcEiaNkqK47w3LVMt9gm4i082Mdwi_ST.mp4');
+
+            video.load();
+            video.play();
+        }
+        function selectVideo4() {
+            var video = document.getElementById('myVideo');
+            var source = document.getElementById('videoSrc');
+
+            source.setAttribute('src', 'https://v.ftcdn.net/04/78/23/54/700_F_478235412_tMBUkXyQqa2BK3oj0tUpE2cZcK6jKGqp_ST.mp4');
+
+            video.load();
+            video.play();
+        }
+
+    </script>
+
+</body>
+</html>
