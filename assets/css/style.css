@@ -18,12 +18,17 @@ h1 {
     font-family: 'Alata', sans-serif;
     font-size: 30px;
 }
+h2 {
+    font-family: 'Noto Sans JP', sans-serif;
+    line-height: 1.5;
+    font-size: 24px;
+    font-weight: bold;
+}
 
 .subtitle {
     font-family: 'Noto Sans JP', sans-serif;
     font-size: 14px;
     margin-left: 36px;
-    display: block;
 }
 a {
     color: inherit;
@@ -262,6 +267,12 @@ header>div>a {
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+.menu-right .nav-item {
+    width: 100%;
+}
+.menu-right .nav-item:hover {
+    text-align: center;
 }
 .menu-right .nav-item:hover .bg:before {
   right: 0;
@@ -596,6 +607,9 @@ footer li {
         padding-left: 0;
     }
 
+    .subtitle {
+        display: block;
+    }
     .footer-right .social-icons ul {
         width: 100%;
         justify-content: space-around;

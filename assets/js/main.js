@@ -10,17 +10,6 @@ function menuClick(x) {
     }
 }
 
-function submenu(x) {
-    x.classList.toggle('submenu-open')
-    var submenu = x.parentElement.lastElementChild;
-    if (submenu.style.height) {
-        submenu.style.height = null;
-        
-    } else {
-        submenu.style.height = submenu.scrollHeight + 'px';
-    }
-}
-
 function menuClose() {
     var menuBtn = document.getElementsByClassName('menu-btn');
     var menu = document.getElementsByClassName('menu')
@@ -32,44 +21,12 @@ function menuClose() {
     }
 }
 
-function consultingTabClick(x) {
-    var consultingTab = document.getElementsByClassName('consulting-flow-tab');
-    var consultingCard = document.getElementsByClassName('consulting-flow-card');
-    var i;
-    if (!consultingTab[x-1].classList.contains('consulting-flow-tab-open')) {
-        consultingTab[x-1].classList.add('consulting-flow-tab-open');
-        if (!consultingCard[x-1].classList.contains('consulting-flow-card-open')) {
-            consultingCard[x-1].classList.add('consulting-flow-card-open');
-        }
-        for (i=0;i<consultingTab.length;i++) {
-            if (i!=x-1) {
-                if (consultingTab[i].classList.contains('consulting-flow-tab-open')) {
-                    consultingTab[i].classList.remove('consulting-flow-tab-open');
-                    if (consultingCard[i].classList.contains('consulting-flow-card-open')) {
-                        consultingCard[i].classList.remove('consulting-flow-card-open');
-                    }
-                }
-            }
-        }
-    }
-}
 
-function faqClick(x) {
-    x.parentElement.classList.toggle('faq_show');
-    var faq = document.getElementsByClassName('faq_card');
-    var i;
-    for(i = 0; i< faq.length; i++) {
-        if (faq[i] != x.parentElement) {
-            if (faq[i].classList.contains('faq_show')) {
-                faq[i].classList.remove('faq_show');
-                faq[i].lastElementChild.style.maxHeight = null;
-            }
-        }
-    }
-    if (x.parentElement.classList.contains('faq_show')) {
-        x.parentElement.lastElementChild.style.maxHeight = x.parentElement.lastElementChild.scrollHeight + 'px';
-    }
-    if (!x.parentElement.classList.contains('faq_show')) {
-        x.parentElement.lastElementChild.style.maxHeight = null;
-    }
-  }
+$( ".faq-q" ).click(function() {
+    $(this).parents().eq(0).find(".faq-a").slideToggle();
+
+    if($(this).parents().eq(0).hasClass("faq-show"))
+        $(this).parents().eq(0).removeClass("faq-show");
+    else
+        $(this).parents().eq(0).addClass("faq-show");
+});
