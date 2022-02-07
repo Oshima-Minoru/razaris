@@ -279,12 +279,64 @@
     padding-left: 25%;
     padding-right: 80px;
 }
-.section03 .container-takaki {
+/* --------------------------- */
+.takaki-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .takaki-main {
+    margin-right: 20px;
+    width: 70%;
+    height: auto;
+    /* box-shadow: 0 50px 75px 50px rgba(30, 30, 30, 0.18);
+    border: 1px solid #e9e9e9; */
+  }
+    
+  .takaki-title {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-family: "Epilogue", sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    text-align: right;
+    text-transform: uppercase;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+  }
+  .swiper-slide-active .takaki-title {
+    -webkit-animation: slide-in 0.3s ease-in both;
+            animation: slide-in 0.3s ease-in both;
+  }
+  
+  .takaki-thumbs {
+    /* order: -1; */
+    width: 30%;
+    height: 25vw;
+  }
+  .takaki-thumbs .swiper-slide img {
+    transition: 0.3s;
+  }
+  .takaki-thumbs .swiper-slide-active {
+    opacity: 0.9;
+  }
+  .takaki-thumbs .swiper-slide-thumb-active {
+    opacity: 1;
+  }
+
+
+
+/* -------------------------------- */
+/* 
+.section03 .takaki-container {
     display: flex;
     margin-top: 50px;
     width: 100%;
 }
-.section03 .container-takaki .takaki {
+.section03 .takaki-container .takaki {
     margin-right: 20px;
     width: 70%;
     height: auto;
@@ -350,14 +402,17 @@
     height: 16px;
     background-repeat: no-repeat;
     background-image: url(../img/arrow-top.png);
-}
+} */
+
+
+
 .section03 .view-more {
     position: absolute;
     left: 0;
     top: 30%;
     overflow: hidden;
     width: 30vw;
-    z-index: 1;
+    z-index: 2;
 }
 .section03 .view-more:hover {
     left: -20px;
@@ -370,7 +425,7 @@
     left: 16.7vw;
     transform: translateX(100%);
     overflow: hidden;
-    z-index: 1;
+    z-index: 3;
 }
 #myVideo {
     position: relative;
@@ -1034,6 +1089,9 @@ a:hover .loader-12 {
         padding-left: 20px;
         padding-right: 20px;
     }
+    .takaki-thumbs {
+        height: 36vw;
+    }
     .section03 .vertical-slider {
         height: 300px;
     }
@@ -1214,7 +1272,7 @@ a:hover .loader-12 {
     .section03 .dancer3 {
         top: -50%;
     }
-    .section03 .container-takaki .takaki {
+    .section03 .takaki-container .takaki {
         margin-right: 4px;
     }
     .section03 .vertical-slider {
