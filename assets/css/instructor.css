@@ -1,0 +1,114 @@
+h1 {
+    font-family: 'Alata', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.container {
+    width: 100%;
+    max-width: 100vw;
+}
+.section-instructor {
+    padding: 100px 0;
+}
+.select-instructors {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.instructor-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.instructor-content .instructor-card {
+    width: 18%;
+    margin-bottom: 40px;
+}
+
+
+@media (max-width: 1440px) {
+    .profile-content {
+        font-size: 14px;
+    }
+}
+@media (max-width: 1280px) {
+    .profile-content {
+        font-size: 12px;
+    }
+
+}
+@media (max-width: 1024px) {
+    .section-profile .container {
+        flex-direction: column;
+    }
+    .profile-content {
+        font-size: 18px;
+    }
+    .profile-left {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .profile-right {
+        width: 100%;
+    }
+}
+@media (max-width: 900px) {
+    
+}
+@media (max-width: 767px) {
+    .wrapper {
+        padding: 0 20px;
+    }
+    .profile-content {
+        font-size: 12px;
+    }
+    .profile-content {
+        padding-left: 20px;
+    }
+    .section-reservation .container {
+        justify-content: center;
+        flex-direction: column;
+        padding: 40px;
+    }
+    .reserve-card {
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 700px) {
+   
+}
+@media (max-width: 600px) {
+    .profile-content {
+        font-size: 10px;
+    }
+    .profile-name, .profile-genre, .profile-title {
+        margin-bottom: 10px;
+    }
+    .profile-genre span {
+        padding-bottom: 10px;
+    }
+    .profile-name, .profile-genre, .profile-title {
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 500px) {
+    .profile-left {
+        flex-direction: column;
+    }
+    .profile-photo {
+        width: 100%;
+    }
+    .profile-content {
+        width: 100%;
+        font-size: 12px;
+        margin-top: 20px;
+    }
+}
+@media (max-width: 400px) {
+   
+}

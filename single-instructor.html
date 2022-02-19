@@ -12,9 +12,8 @@
     <link rel="stylesheet" href="./assets/css/fontawesome.css">
     <link rel="stylesheet" href="./assets/css/brands.css">
     <link rel="stylesheet" href="./assets/css/solid.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/top.css">
-    <link rel="stylesheet" href="./assets/css/faq.css">
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <link rel="stylesheet" href="./assets/css/single-instructor.css">
 
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -63,7 +62,7 @@
                         </a>
                     </li>
                     <li>
-                        <a class="nav-item" href="https://www.razaris.jp/instructor">
+                        <a class="nav-item" href="./single-instructor.html">
                             <div class="inWrap">
                                 <div class="box en">INSTRUCTOR</div>
                                 <div class="box jp">インストラクター</div>
@@ -90,7 +89,7 @@
                         </a>
                     </li>
                     <li>
-                        <a class="nav-item" href="https://www.razaris.jp/qa">
+                        <a class="nav-item" href="./faq.html">
                             <div class="inWrap">
                                 <div class="box en">Q&amp;A</div>
                                 <div class="box jp">よくある質問</div>
@@ -178,7 +177,7 @@
         </div>
     </div>
     <main>
-        <section id="section01" class="top-banner" data-props="padding-top,padding-bottom" data-values="45,45">
+        <section id="top-banner" class="top-banner" data-props="padding-top,padding-bottom" data-values="45,45">
             <div class="social-container">
                 <div class="social-icons">
                     <ul>
@@ -195,160 +194,193 @@
             <div class="black-bar"></div>
         </section>
         <!-- section faq -->
-        <section class="section-pagetitle">
+        <section id="section-profile" class="section-profile">
             <div class="wrapper">
                 <div class="container">
-                    <div class="page-title">
-                        <img src="./assets/img/mark-black.png" alt="">
-                        <p>よくある質問</p>
-                    </div>    
-                </div>    
+                    <div class="profile-left">
+                        <div class="profile-photo">
+                            <img src="./assets/img/photo1.png" alt="">
+                        </div>
+                        <div class="profile-content">
+                            <div>
+                                <div class="profile-name">
+                                    NAME <span>yuua</span>
+                                </div>
+                                <div class="profile-genre">
+                                    GENRE <span>HIPHOP</span>
+                                </div>
+                                <div class="profile-title">
+                                    PROFILE
+                                </div>
+                                <ul>
+                                    <li>
+                                        元DA PUMP KENライブバックダンサー
+                                    </li>
+                                    <li>
+                                        Zero contest出場
+                                    </li>
+                                    <li>
+                                        Hotpants 出埸
+                                    </li>
+                                    <li>
+                                        Familia 出埸
+                                    </li>
+                                    <li>
+                                        Hide&Seek 出埸
+                                    </li>
+                                    <li>
+                                        USAダンス選手権大会出場…
+                                    </li>
+                                </ul>    
+                            </div>
+                            <a href="#" class="black-btn">Read More</a>
+                        </div>
+                    </div>
+                    <div class="profile-right">
+                        <div class="movie-container">
+                            <div class="swiper-container movie-main">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <video id="myVideo" name="myVideo" autoplay="" muted="" loop="" data-xblocker="passed" style="visibility: visible;">
+                                            <source id="videoSrc" name="videoSrc" src="https://v.ftcdn.net/04/48/09/37/240_F_448093765_5IXoB23cC8hgKr6oNmVTh3h4mNml1hp4_ST.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <video id="myVideo" name="myVideo" autoplay="" muted="" loop="" data-xblocker="passed" style="visibility: visible;">
+                                            <source id="videoSrc" name="videoSrc" src="https://v.ftcdn.net/04/48/09/38/700_F_448093869_Vq3X20FxTqQklXRP7B7qhKaOr8yYSsgb_ST.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <video id="myVideo" name="myVideo" autoplay="" muted="" loop="" data-xblocker="passed" style="visibility: visible;">
+                                            <source id="videoSrc" name="videoSrc" src="https://v.ftcdn.net/04/48/09/38/700_F_448093812_rDXJckNQewrt40mZOoKi8KOc2uJFhSHm_ST.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <video id="myVideo" name="myVideo" autoplay="" muted="" loop="" data-xblocker="passed" style="visibility: visible;">
+                                            <source id="videoSrc" name="videoSrc" src="https://v.ftcdn.net/04/48/09/32/700_F_448093206_kaLBcEiaNkqK47w3LVMt9gm4i082Mdwi_ST.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <video id="myVideo" name="myVideo" autoplay="" muted="" loop="" data-xblocker="passed" style="visibility: visible;">
+                                            <source id="videoSrc" name="videoSrc" src="https://v.ftcdn.net/04/78/23/54/700_F_478235412_tMBUkXyQqa2BK3oj0tUpE2cZcK6jKGqp_ST.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-container movie-thumbs">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <video id="myVideo" name="myVideo" autoplay="" muted="" loop="" data-xblocker="passed" style="visibility: visible;">
+                                            <source id="videoSrc" name="videoSrc" src="https://v.ftcdn.net/04/48/09/37/240_F_448093765_5IXoB23cC8hgKr6oNmVTh3h4mNml1hp4_ST.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <video id="myVideo" name="myVideo" autoplay="" muted="" loop="" data-xblocker="passed" style="visibility: visible;">
+                                            <source id="videoSrc" name="videoSrc" src="https://v.ftcdn.net/04/48/09/38/700_F_448093869_Vq3X20FxTqQklXRP7B7qhKaOr8yYSsgb_ST.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <video id="myVideo" name="myVideo" autoplay="" muted="" loop="" data-xblocker="passed" style="visibility: visible;">
+                                            <source id="videoSrc" name="videoSrc" src="https://v.ftcdn.net/04/48/09/38/700_F_448093812_rDXJckNQewrt40mZOoKi8KOc2uJFhSHm_ST.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <video id="myVideo" name="myVideo" autoplay="" muted="" loop="" data-xblocker="passed" style="visibility: visible;">
+                                            <source id="videoSrc" name="videoSrc" src="https://v.ftcdn.net/04/48/09/32/700_F_448093206_kaLBcEiaNkqK47w3LVMt9gm4i082Mdwi_ST.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <video id="myVideo" name="myVideo" autoplay="" muted="" loop="" data-xblocker="passed" style="visibility: visible;">
+                                            <source id="videoSrc" name="videoSrc" src="https://v.ftcdn.net/04/78/23/54/700_F_478235412_tMBUkXyQqa2BK3oj0tUpE2cZcK6jKGqp_ST.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-        <section id="section-faq" class="section-faq">
+        <section class="section-reservation">
             <div class="wrapper">
                 <div class="container">
-                    <aside id="anchor">
-                        <ul>
-                            <li><a href="#trial">体験・入会について</a></li>
-                            <li><a href="#lesson">レッスン</a></li>
-                            <li><a href="#system">システム</a></li>
-                            <li><a href="#contest">発表会・コンテスト・メディア出演</a></li>
-                            <li><a href="#etc">その他</a></li>
-                        </ul>
-                        <br class="mb60">
-                    </aside>
+                    <div class="reserve-card">
+                        <div class="card-title">
+                            キャンディチア<br>
+                            <span>（3歳〜園児限定）</span>
+                        </div>
+                        <div class="card-time">
+                            KIDS30分〜45分クラス火曜日16:00〜16:30
+                        </div>
+                        <div class="card-text">
+                            チアダンスはポンポンを使って可愛く楽しく、華やかで活発な集 団ダンス。チームー体での演技なので協調性も身につきます。ア イドルダンスは「かっこいい」より「可愛くてキュート」に踊りたしゝ アイドルになりきって踊ります。
+                        </div>
+                        <a href="#" class="reserve-btn">reserve</a>
+                    </div>
+                    <div class="reserve-card">
+                        <div class="card-title">
+                            キャンディチア<br>
+                            <span>（3歳〜園児限定）</span>
+                        </div>
+                        <div class="card-time">
+                            KIDS30分〜45分クラス火曜日16:00〜16:30
+                        </div>
+                        <div class="card-text">
+                            チアダンスはポンポンを使って可愛く楽しく、華やかで活発な集 団ダンス。チームー体での演技なので協調性も身につきます。ア イドルダンスは「かっこいい」より「可愛くてキュート」に踊りたしゝ アイドルになりきって踊ります。
+                        </div>
+                        <a href="#" class="reserve-btn">reserve</a>
+                    </div>
+                    <div class="reserve-card">
+                        <div class="card-title">
+                            キャンディチア<br>
+                            <span>（3歳〜園児限定）</span>
+                        </div>
+                        <div class="card-time">
+                            KIDS30分〜45分クラス火曜日16:00〜16:30
+                        </div>
+                        <div class="card-text">
+                            チアダンスはポンポンを使って可愛く楽しく、華やかで活発な集 団ダンス。チームー体での演技なので協調性も身につきます。ア イドルダンスは「かっこいい」より「可愛くてキュート」に踊りたしゝ アイドルになりきって踊ります。
+                        </div>
+                        <a href="#" class="reserve-btn">reserve</a>
+                    </div>
                 </div>
             </div>
         </section>
-        <section id="trial" class="section-trial">
+        <section class="section-instructor">
             <div class="wrapper">
                 <div class="container">
-                    <!-- 体験・入会について -->
-                    <div class="faq-title">
-                        <h2>体験・入会について</h2>
+                    <div class="instructor-title">
+                        同じジャンルのインストラクター
                     </div>
-                    <div class="faq-card">
-                        <div class="faq-q">
-                            <img src="./assets/img/q.png" alt="">
-                            <p>
-                                見学・体験はできますか？
-                            </p>
+                    <div class="instructor-content">
+                        <div class="instructor-card">
+                            <img src="./assets/img/photo1.png" alt="">
                         </div>
-                        <div class="faq-a">
-                            <div class="faq-text">
-                                <p>
-                                    見学は承っていませんが、まず最初に体験レッスンを受講することでクラスの雰囲気を十分に感じていただけます。講師は体験受講される方の状況を把握していますので、安心して受けられます。体験レッスン料は1,000円（税込）です。
-                                </p>
-                            </div>
+                        <div class="instructor-card">
+                            <img src="./assets/img/photo2.png" alt="">
+                        </div>
+                        <div class="instructor-card">
+                            <img src="./assets/img/photo3.png" alt="">
+                        </div>
+                        <div class="instructor-card">
+                            <img src="./assets/img/photo4.png" alt="">
+                        </div>
+                        <div class="instructor-card">
+                            <img src="./assets/img/photo1.png" alt="">
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
-        <section id="lesson" class="section-lesson">
-            <div class="wrapper">
-                <div class="container">    
-                    <!-- レッスン -->
-                    <div class="faq-title">
-                        <h2>レッスン</h2>
-                    </div>
-                    <div class="faq-card">
-                        <div class="faq-q">
-                            <img src="./assets/img/q.png" alt="">
-                            <p>
-                                他のダンススクールとは何が違うのですか？
-                            </p>
-                        </div>
-                        <div class="faq-a">
-                            <div class="faq-text">
-                                <p>
-                                    国内外のダンスシーンやメディアで活躍する一流ダンサーから直接レッスンを受けられます。また、レッスン前後に2階のラウンジで団らんしたりくつろぐこともできますので、アットホームな雰囲気で居心地がいいスタジオです。
-                                </p>
-                            </div>
+                    <div class="select-instructors">
+                        <div class="selectbox">
+                            <select>
+                                <option>Option 1</option>
+                                <option>Option 2</option>
+                                <option>Option 3</option>
+                                <option>Option 4</option>
+                                <option>Option 5</option>
+                            </select>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section id="system" class="section-system">
-            <div class="wrapper">
-                <div class="container">    
-                    <!-- レッスン -->
-                    <div class="faq-title">
-                        <h2>レッスン</h2>
-                    </div>
-                    <div class="faq-card">
-                        <div class="faq-q">
-                            <img src="./assets/img/q.png" alt="">
-                            <p>
-                                他のダンススクールとは何が違うのですか？
-                            </p>
-                        </div>
-                        <div class="faq-a">
-                            <div class="faq-text">
-                                <p>
-                                    国内外のダンスシーンやメディアで活躍する一流ダンサーから直接レッスンを受けられます。また、レッスン前後に2階のラウンジで団らんしたりくつろぐこともできますので、アットホームな雰囲気で居心地がいいスタジオです。
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="contest" class="section-contest">
-            <div class="wrapper">
-                <div class="container">    
-                    <!-- 発表会・コンテスト・メディア出演 -->
-                    <div class="faq-title">
-                        <h2>発表会・コンテスト・メディア出演</h2>
-                    </div>
-                    <div class="faq-card">
-                        <div class="faq-q">
-                            <img src="./assets/img/q.png" alt="">
-                            <p>
-                                発表会やイベント出演はありますか？
-                            </p>
-                        </div>
-                        <div class="faq-a">
-                            <div class="faq-text">
-                                <p>
-                                    ダンスクラスでは年に1回大規模なダンス発表会があり、希望によりご参加いただけます。<br>
-                                    是非日頃の練習の成果を発揮してください！<br>
-                                    過去には、プラザウエスト、蕨市民会館、彩の国芸術劇場、さいたま市文化センター等でダンス公演を開催しました。<br>
-                                    他、地域交流イベント、コンテストに出演する機会もあります。
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="etc" class="section-etc">
-            <div class="wrapper">
-                <div class="container">
-                    <!-- その他 -->
-                    <div class="faq-title">
-                        <h2>その他</h2>
-                    </div>
-                    <div class="faq-card">
-                        <div class="faq-q">
-                            <img src="./assets/img/q.png" alt="">
-                            <p>
-                                キッズの送り迎えは必ず必要ですか？駐車場はありますか？
-                            </p>
-                        </div>
-                        <div class="faq-a">
-                            <div class="faq-text">
-                                <p>
-                                    お子様の安全の為にできるだけ慣れるまで付き添いお願いいたします。<br>
-                                    スタジオ前駐車場（3台）と隣の駐車場（8、9、10番）、交差点奥駐車場（4台）は譲り合ってご利用ください。満車の際は、隣のコインパーキングをご利用下さい。駐車場内で昇降をお願いいたします。<br>
-                                    スタジオ前での路駐、Uターン、アイドリングは禁止とさせていただいております。
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>    
             </div>
         </section>
     </main>
@@ -526,98 +558,42 @@
       });
     </script>
     <script>
-        var vSwiper = new Swiper(".vSwiper", {
-            slidesPerView: 3,
-            direction: "vertical",
+        var movieThumbs = new Swiper(".movie-thumbs", {
+            centeredSlides: true,
+            centeredSlidesBounds: true,
+            centeredSlides: true,
+            slidesPerView: 4,
             spaceBetween: 20,
-            loop: false,
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            // autoplay: 
-            // {
-            //     delay: 1000,
+            watchOverflow: true,
+            watchSlidesVisibility: true,
+            watchSlidesProgress: true
+        });
+
+        var movieMain = new Swiper(".movie-main", {
+            watchOverflow: true,
+            watchSlidesVisibility: true,
+            watchSlidesProgress: true,
+            preventInteractionOnTransition: true,
+            // navigation: {
+            //     nextEl: '.swiper-button-next',
+            //     prevEl: '.swiper-button-prev',
             // },
-            breakpoints: {
-                300: {
-                    slidesPerView: 2,
-                    spaceBetween: 4,
-                },
-                400: {
-                    slidesPerView: 3,
-                    spaceBetween: 6,
-                },
-                700: {
-                    slidesPerView: 3,
-                    spaceBetween: 10,
-                },
-                1024: {
-                    slidesPerView: 3,
-                    spaceBetween: 15,
-                },
-                1400: {
-                    slidesPerView: 3,
-                    spaceBetween: 20,
-                },
+            effect: 'fade',
+                fadeEffect: {
+                crossFade: true
             },
+            thumbs: {
+                swiper: movieThumbs
+            }
+        });
+
+        movieMain.on('slideChangeTransitionStart', function() {
+            movieThumbs.slideTo(movieMain.activeIndex);
+        });
+
+        movieThumbs.on('transitionStart', function(){
+            movieMain.slideTo(movieThumbs.activeIndex);
         });
     </script>
-    <script type="text/javascript">
-        function selectVideo() {
-            var video = document.getElementById('myVideo');
-            var source = document.getElementById('videoSrc');
-
-            source.setAttribute('src', 'https://v.ftcdn.net/04/48/09/37/240_F_448093765_5IXoB23cC8hgKr6oNmVTh2h4mNml1hp4_ST.mp4');
-
-            video.load();
-            video.play();
-
-            fetchVideoAndPlay();
-        }
-
-        function selectVideo1() {
-            var video = document.getElementById('myVideo');
-            var source = document.getElementById('videoSrc');
-
-            source.setAttribute('src', 'https://v.ftcdn.net/04/48/09/38/700_F_448093869_Vq3X20FxTqQklXRP7B7qhKaOr8yYSsgb_ST.mp4');
-
-            video.load();
-            video.play();
-        }
-        function selectVideo2() {
-            var video = document.getElementById('myVideo');
-            var source = document.getElementById('videoSrc');
-
-            source.setAttribute('src', 'https://v.ftcdn.net/04/48/09/38/700_F_448093812_rDXJckNQewrt40mZOoKi8KOc2uJFhSHm_ST.mp4');
-
-            video.load();
-            video.play();
-        }
-        function selectVideo3() {
-            var video = document.getElementById('myVideo');
-            var source = document.getElementById('videoSrc');
-
-            source.setAttribute('src', 'https://v.ftcdn.net/04/48/09/32/700_F_448093206_kaLBcEiaNkqK47w3LVMt9gm4i082Mdwi_ST.mp4');
-
-            video.load();
-            video.play();
-        }
-        function selectVideo4() {
-            var video = document.getElementById('myVideo');
-            var source = document.getElementById('videoSrc');
-
-            source.setAttribute('src', 'https://v.ftcdn.net/04/78/23/54/700_F_478235412_tMBUkXyQqa2BK3oj0tUpE2cZcK6jKGqp_ST.mp4');
-
-            video.load();
-            video.play();
-        }
-
-    </script>
-
 </body>
 </html>

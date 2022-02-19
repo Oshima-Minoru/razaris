@@ -1,41 +1,4 @@
-.wrapper {
-    padding: 0 40px;
-}
-.container {
-    width: 100%;
-    max-width: 1000px;
-    margin: auto;
-}
-.top-banner {
-    height: 170px;
-    padding-top: 150px;
-    background-image: url(../img/banner-bg.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.top-banner .social-container {
-    position: absolute;
-    right: 36px;
-    bottom: 20px;
-}
-.top-banner .black-bar {
-    background-color: black;
-    height: 20px;
-}
-.section-pagetitle {
-    margin-top: 60px;
-    margin-bottom: 40px;
-}
-.page-title {
-    display: flex;
-    align-items: center;
-}
-.page-title p {
-    font-size: 18px;
-    font-weight: bold;
-    margin-left: 40px;
-}
+
 #anchor ul {
     width: 100%;
     max-width: 800px;
