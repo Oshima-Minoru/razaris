@@ -377,7 +377,7 @@ header>div>a {
 .top-banner .social-container {
     position: absolute;
     right: 36px;
-    bottom: 20px;
+    bottom: -20px;
 }
 .top-banner .black-bar {
     background-color: black;
